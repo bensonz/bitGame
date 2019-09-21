@@ -4,7 +4,6 @@
 #               and from http://opengameart.org/
 # music from http://love2d.org/wiki/Free_Game_Resources
 
-
 import pygame
 from pygame.locals import *
 import random
@@ -266,7 +265,7 @@ class player(pygame.sprite.Sprite):
             print "problem with sound"
         else:
             pygame.mixer.init()
-            self.snd_playerHurt = pygame.mixer.Sound("Sounds/Player/eight_bits_blip.ogg")
+            self.snd_playerHurt = pygame.mixer.Sound("Sounds/Player/gun.ogg")
             self.snd_rifleAttack = pygame.mixer.Sound("Sounds/Player/gun.ogg")
             self.snd_jump = pygame.mixer.Sound("Sounds/Player/jump.ogg")
         # this is for frame update
